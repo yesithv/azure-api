@@ -18,7 +18,8 @@ public class AzureController {
         return Response.builder()
                 .name(request.getName())
                 .age(request.getAge())
-                .message("Hello from Spring boot - Controller for Azure-Api")
+                .random((int) (Math.random() * request.getAge()))
+                .message("Hello from Spring boot - Controller for Azure-Api. Generating random between 1 and your age")
                 .dateTime(LocalDateTime.now())
                 .build();
     }

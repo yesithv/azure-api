@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 public class Response {
     private String name;
     private Integer age;
+    private Integer random;
     private String message;
     private LocalDateTime dateTime;
 }
